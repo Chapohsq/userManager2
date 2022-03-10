@@ -1,9 +1,10 @@
-<div (click)="onClickId(pluto.id)" class="container" *ngIf="pluto">
-    <span>{{pluto.name}}</span>
-    <span>{{pluto.id}}</span>
-    <!-- <span>{{pluto.username}}</span> -->
-    <!-- <span>{{pluto.email}}</span>
-    <span>{{pluto.phone}}</span>
-    <span>{{pluto.website}}</span> -->
-    <!-- <app-address-card [address]="pluto.address"></app-address-card> -->
+<div class="container" *ngIf="user">
+    <span>{{user.name}}</span>
+    <span>{{user.username}}</span>
+    <div class="complete-card" *ngIf="!isPartial">
+        <span>{{user.email}}</span>
+        <span>{{user.phone}}</span>
+        <span>{{user.website}}</span>
+        <app-address-card [address]="user.address"></app-address-card>
+    </div>
 </div>

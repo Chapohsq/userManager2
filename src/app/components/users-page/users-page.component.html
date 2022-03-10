@@ -1,3 +1,5 @@
 <div>
-    <app-user-detail *ngFor="let pippo of users" [pluto]="pippo"></app-user-detail>
+    <a *ngFor="let user of users" href="/user/{{user.id}}">
+        <app-user-detail [isPartial]="true"  [user]="user"></app-user-detail>
+    </a>
 </div>
