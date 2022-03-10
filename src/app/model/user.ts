@@ -13,7 +13,14 @@ export interface User {
 }
 
 
+export class UserHelper{
 
+    static upperName(user: User): string{
+        return user.name.toUpperCase()
+    }
+
+
+}
 
 
 

@@ -8,12 +8,7 @@ import { UserDetailComponent } from './components/user-detail/user-detail.compon
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AddressCardComponent } from './components/address-card/address-card.component';
 import { SigleUserPageComponent } from './components/sigle-user-page/sigle-user-page.component';
-import { CardComponent } from './components/card/card.component';
-import { DataCardComponent } from './components/data-card/data-card.component';
-import { AddressDataComponent } from './components/address-data/address-data.component';
-import { CompanyDataComponent } from './components/company-data/company-data.component';
-import { PostContainerComponent } from './components/post-container/post-container.component';
-import { PostDetailComponent } from './components/post-detail/post-detail.component';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +18,7 @@ import { PostDetailComponent } from './components/post-detail/post-detail.compon
     PageNotFoundComponent,
     AddressCardComponent,
     SigleUserPageComponent,
-    CardComponent,
-    DataCardComponent,
-    AddressDataComponent,
-    CompanyDataComponent,
-    PostContainerComponent,
-    PostDetailComponent
+    PostComponent
   ],
   imports: [
     BrowserModule,

@@ -9,9 +9,9 @@ import { ConnectionService } from 'src/app/services/connection.service';
 })
 export class UsersPageComponent implements OnInit {
 
-  users: User[] = []
+  users: User[] = [];
 
-  constructor(private conServ: ConnectionService) { }
+  constructor(private conServ: ConnectionService) {}
 
   ngOnInit(): void {
     // this.conServ.fetchUsers()
@@ -19,7 +19,6 @@ export class UsersPageComponent implements OnInit {
     // .then(jsonArray => this.users = jsonArray)
 
     this.conServ.getUsers().subscribe(userArray => this.users = userArray);
-    
   }
 
 
